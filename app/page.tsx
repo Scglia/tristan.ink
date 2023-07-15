@@ -1,95 +1,109 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import { clsx } from "clsx";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <main>
+      <div className={styles.center}>
+        <header className={styles.header}>
+          <div className={styles.logo}>Tristan Scaglia</div>
+          <menu className={styles.menu}>
+            <li>
+              <a href="mailto:tristan.scaglia@gmail.com">contact</a>
+            </li>
+            <span>·</span>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/tristan-scaglia-299b24173/"
+              >
+                linkedin
+              </a>
+            </li>
+          </menu>
+        </header>
+      </div>
+      <div className={styles.center}>
+        <div className={styles.grid}>
+          <div className={styles.description}>
+            <div>I&apos;m a designer and developer</div>
+            <div>Based in the Netherlands</div>
+          </div>
+          <div className={styles.card}>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              fill={true}
+              src="/illustration_resume.jpg"
+              alt="Resume illustration"
             />
-          </a>
+            <div className={styles.cardContent}>
+              <div className={styles.cardTagList}></div>
+              <div className={styles.cardTitle} style={{ color: "#274E81" }}>
+                Resume
+              </div>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <Image
+              fill={true}
+              src="/illustration_gps.jpg"
+              alt="Experimentation at TomTom illustration"
+            />
+            <div className={styles.cardContent}>
+              <div className={styles.cardTagList}>
+                <div
+                  className={styles.cardTagItem}
+                  style={{ background: "#1A6262" }}
+                >
+                  UX Case Study
+                </div>
+              </div>
+              <div className={styles.cardTitle} style={{ color: "#165252" }}>
+                Experimentation at TomTom
+              </div>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <Image
+              fill={true}
+              src="/illustration_app.jpg"
+              alt="Podcast App illustration"
+            />
+            <div className={styles.cardContent}>
+              <div className={styles.cardTagList}>
+                <div
+                  className={styles.cardTagItem}
+                  style={{ background: "#604535" }}
+                >
+                  UI/UX
+                </div>
+                <div
+                  className={styles.cardTagItem}
+                  style={{ background: "#604535" }}
+                >
+                  React
+                </div>
+              </div>
+              <div className={styles.cardTitle} style={{ color: "#4E3527" }}>
+                Podcast App
+              </div>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <Image
+              fill={true}
+              src="/illustration_laptop.jpg"
+              alt="Design exploration illustration"
+            />
+            <div className={styles.cardContent}>
+              <div className={styles.cardTagList}></div>
+              <div className={styles.cardTitle} style={{ color: "#6E2C1C" }}>
+                Design Exploration
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
     </main>
-  )
+  );
 }

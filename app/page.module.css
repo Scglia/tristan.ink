@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: baseline;
   padding: 0 var(--font-24-vw) 32px;
-  gap: 16px;
+  gap: 8px;
 }
 
 .menu {
@@ -64,6 +64,7 @@
   mix-blend-mode: multiply;
   font-size: 0.87rem;
   font-size: max(0.6875rem, 4.29cqb);
+  font-weight: 300;
   opacity: 0.85;
 }
 

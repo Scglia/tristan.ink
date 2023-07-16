@@ -1,6 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { clsx } from "clsx";
+import illustrationApp from "../public/illustration_app.png";
+import illustrationLaptop from "../public/illustration-laptop-crop.png";
+import illustrationResume from "../public/illustration-resume-crop.png";
+import illustrationGps from "../public/illustration-gps-crop.png";
 
 export default function Home() {
   return (
@@ -9,11 +13,11 @@ export default function Home() {
         <header className={styles.header}>
           <div className={styles.logo}>Tristan Scaglia</div>
           <menu className={styles.menu}>
-            <li>
+            <li className={styles.menuItem}>
               <a href="mailto:tristan.scaglia@gmail.com">contact</a>
             </li>
-            <span>·</span>
-            <li>
+            <span className={styles.menuItem}>·</span>
+            <li className={styles.menuItem}>
               <a
                 target="_blank"
                 href="https://www.linkedin.com/in/tristan-scaglia-299b24173/"
@@ -26,15 +30,16 @@ export default function Home() {
       </div>
       <div className={styles.center}>
         <div className={styles.grid}>
-          <div className={styles.description}>
+          <div className={clsx(styles.card, styles.description)}>
             <div>I&apos;m a designer and developer</div>
-            <div>Based in the Netherlands</div>
+            <div>based in the Netherlands</div>
           </div>
           <div className={styles.card}>
             <Image
               fill={true}
-              src="/illustration_resume.jpg"
+              src={illustrationResume}
               alt="Resume illustration"
+              placeholder="blur"
             />
             <div className={styles.cardContent}>
               <div className={styles.cardTagList}></div>
@@ -46,8 +51,9 @@ export default function Home() {
           <div className={styles.card}>
             <Image
               fill={true}
-              src="/illustration_gps.jpg"
+              src={illustrationGps}
               alt="Experimentation at TomTom illustration"
+              placeholder="blur"
             />
             <div className={styles.cardContent}>
               <div className={styles.cardTagList}>
@@ -66,8 +72,9 @@ export default function Home() {
           <div className={styles.card}>
             <Image
               fill={true}
-              src="/illustration_app.jpg"
+              src={illustrationApp}
               alt="Podcast App illustration"
+              placeholder="blur"
             />
             <div className={styles.cardContent}>
               <div className={styles.cardTagList}>
@@ -92,8 +99,9 @@ export default function Home() {
           <div className={styles.card}>
             <Image
               fill={true}
-              src="/illustration_laptop.jpg"
+              src={illustrationLaptop}
               alt="Design exploration illustration"
+              placeholder="blur"
             />
             <div className={styles.cardContent}>
               <div className={styles.cardTagList}></div>

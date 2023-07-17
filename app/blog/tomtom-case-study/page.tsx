@@ -4,7 +4,7 @@ import ArticleIntro from "@/components/Article/ArticleIntro";
 import ArticleText from "@/components/Article/ArticleText";
 import ArticleSubtitle from "@/components/Article/ArticleSubtitle";
 import Header from "@/components/Header";
-import illustrationGps from "@/public/illustration-gps-crop.png";
+import illustrationGps from "@/public/illustration-gps-blog.png";
 
 export default function TomTomCaseStudy() {
   return (

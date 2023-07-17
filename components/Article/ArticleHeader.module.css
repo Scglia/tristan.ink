@@ -1,0 +1,27 @@
+.imageContainer {
+  aspect-ratio: 34/19;
+  margin-top: 24px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.tagList {
+  display: flex;
+}
+
+.tagItem {
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: white;
+  mix-blend-mode: multiply;
+  font-size: 0.875rem;
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 2.25rem;
+  font-weight: 500;
+}

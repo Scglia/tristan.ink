@@ -59,6 +59,7 @@
   font-weight: 300;
   cursor: default;
   container-type: inline-size;
+  border-radius: 0;
 }
 
 
@@ -86,6 +87,11 @@
     flex-direction: column;
     gap: 24px;
     padding-bottom: 40px;
+  }
+
+  .description {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .cardLarge {

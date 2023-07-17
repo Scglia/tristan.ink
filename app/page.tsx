@@ -1,11 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { clsx } from "clsx";
-import Header from "../components/Header";
-import illustrationApp from "../public/illustration_app.png";
-import illustrationLaptop from "../public/illustration-laptop-crop.png";
-import illustrationResume from "../public/illustration-resume-crop.png";
-import illustrationGps from "../public/illustration-gps-crop.png";
+import Header from "@/components/Header";
+import illustrationApp from "@/public/illustration_app.png";
+import illustrationLaptop from "@/public/illustration-laptop-crop.png";
+import illustrationResume from "@/public/illustration-resume-crop.png";
+import illustrationGps from "@/public/illustration-gps-crop.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -33,27 +34,29 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={styles.card}>
-            <Image
-              fill={true}
-              src={illustrationGps}
-              alt="Experimentation at TomTom illustration"
-              placeholder="blur"
-            />
-            <div className={styles.cardContent}>
-              <div className={styles.cardTagList}>
-                <div
-                  className={styles.cardTagItem}
-                  style={{ background: "#1A6262" }}
-                >
-                  UX Case Study
+          <Link href="/blog/tomtom-case-study">
+            <div className={styles.card}>
+              <Image
+                fill={true}
+                src={illustrationGps}
+                alt="Experimentation at TomTom illustration"
+                placeholder="blur"
+              />
+              <div className={styles.cardContent}>
+                <div className={styles.cardTagList}>
+                  <div
+                    className={styles.cardTagItem}
+                    style={{ background: "#1A6262" }}
+                  >
+                    UX Case Study
+                  </div>
+                </div>
+                <div className={styles.cardTitle} style={{ color: "#165252" }}>
+                  Experimentation at TomTom
                 </div>
               </div>
-              <div className={styles.cardTitle} style={{ color: "#165252" }}>
-                Experimentation at TomTom
-              </div>
             </div>
-          </div>
+          </Link>
           <div className={styles.card}>
             <Image
               fill={true}

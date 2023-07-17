@@ -123,7 +123,17 @@
     }
     
     .header {
-      margin-top: 40px;
+      margin-top: 0;
+      padding-bottom: 16px;
+    }
+
+    .logo {
+      padding-top: 48px;
+      line-height: 32px;
+    }
+
+    .menu {
+      padding-top: 40px;
     }
 
     .cardLarge {
@@ -133,6 +143,10 @@
     .center {
       --page-padding: 24px;
       max-width: 468px;
+  }
+
+  .cardTagItem {
+    font-weight: 400;
   }
 }
 

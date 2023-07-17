@@ -20,20 +20,25 @@ export default function Home() {
             <div>I&apos;m a designer and developer</div>
             <div>based in the Netherlands</div>
           </div>
-          <div className={styles.card}>
-            <Image
-              fill={true}
-              src={illustrationResume}
-              alt="Resume illustration"
-              placeholder="blur"
-            />
-            <div className={styles.cardContent}>
-              <div className={styles.cardTagList}></div>
-              <div className={styles.cardTitle} style={{ color: "#274E81" }}>
-                Resume
+          <a
+            href="/Tristan Scaglia - Designer and developer.pdf"
+            target="_blank"
+          >
+            <div className={styles.card}>
+              <Image
+                fill={true}
+                src={illustrationResume}
+                alt="Resume illustration"
+                placeholder="blur"
+              />
+              <div className={styles.cardContent}>
+                <div className={styles.cardTagList}></div>
+                <div className={styles.cardTitle} style={{ color: "#274E81" }}>
+                  Resume
+                </div>
               </div>
             </div>
-          </div>
+          </a>
           <Link href="/blog/tomtom-case-study">
             <div className={styles.card}>
               <Image

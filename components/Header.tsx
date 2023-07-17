@@ -1,9 +1,12 @@
+import Link from "next/link";
 import styles from "./Header.module.css";
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>Tristan Scaglia</div>
+      <Link href="/" className={styles.logo}>
+        Tristan Scaglia
+      </Link>
       <menu className={styles.menu}>
         <li className={styles.menuItem}>
           <a href="mailto:tristan.scaglia@gmail.com">contact</a>

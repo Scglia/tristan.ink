@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  margin-top: 64px;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 var(--font-24-vw) 32px;
+  gap: 8px;
+}
+
+.menu {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+  font-size: var(--font-24-vw);
+  font-weight: 500;
+}
+
+.menuItem a {
+  padding: 16px 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2.25rem;
+  padding-right: 24px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .header {
+    margin-top: 0;
+    padding-bottom: 16px;
+  }
+
+  .logo {
+    padding-top: 32px;
+  }
+
+  .menu {
+    padding-top: 40px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 32px;
+  }
+}

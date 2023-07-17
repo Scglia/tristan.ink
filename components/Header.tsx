@@ -1,0 +1,23 @@
+import styles from "./Header.module.css";
+
+export default function Header() {
+  return (
+    <header className={styles.header}>
+      <div className={styles.logo}>Tristan Scaglia</div>
+      <menu className={styles.menu}>
+        <li className={styles.menuItem}>
+          <a href="mailto:tristan.scaglia@gmail.com">contact</a>
+        </li>
+        <span className={styles.menuItem}>·</span>
+        <li className={styles.menuItem}>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/tristan-scaglia-299b24173/"
+          >
+            linkedin
+          </a>
+        </li>
+      </menu>
+    </header>
+  );
+}

@@ -58,6 +58,7 @@
   font-size: var(--font-24-vw);
   font-weight: 300;
   cursor: default;
+  container-type: inline-size;
 }
 
 

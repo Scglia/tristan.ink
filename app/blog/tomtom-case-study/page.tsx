@@ -23,10 +23,15 @@ export default function TomTomCaseStudy() {
           />
           <ArticleText>
             <ArticleIntro>
-              I was tasked with addressing the issue of users struggling to find
-              the device update feature on our website.
+              At TomTom, I was part of a team that was responsible for improving
+              the user experience of the website. We used A/B testing to
+              validate our ideas and measure the impact of our changes.
             </ArticleIntro>
-            <ArticleSubtitle>Problem</ArticleSubtitle>
+            <p>
+              But before making any changes, we have to find out what needs
+              improvement.
+            </p>
+            <ArticleSubtitle>The problem</ArticleSubtitle>
             <p>
               Based on a poll on our website, it was discovered that a
               significant number of users were having difficulty updating their
@@ -49,9 +54,9 @@ export default function TomTomCaseStudy() {
               update&quot; support page. This inconsistency made it challenging
               for users to find the update option they needed.
             </p>
-            <ArticleSubtitle>Solution</ArticleSubtitle>
+            <ArticleSubtitle>The solutions</ArticleSubtitle>
             <p>
-              To address the problem, the following solutions were implemented:
+              To address the problem, the following solutions were proposed:
             </p>
             <p style={{ paddingLeft: 24 }}>
               <b>1. Add a &quot;Login to Update&quot; button</b>

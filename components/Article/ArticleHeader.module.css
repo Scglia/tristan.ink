@@ -8,6 +8,7 @@
 
 .tagList {
   display: flex;
+  gap: 8px;
 }
 
 .tagItem {

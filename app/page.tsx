@@ -62,47 +62,54 @@ export default function Home() {
               </div>
             </div>
           </Link>
-          <div className={styles.card}>
-            <Image
-              fill={true}
-              src={illustrationApp}
-              alt="Podcast App illustration"
-              placeholder="blur"
-            />
-            <div className={styles.cardContent}>
-              <div className={styles.cardTagList}>
-                <div
-                  className={styles.cardTagItem}
-                  style={{ background: "#604535" }}
-                >
-                  UI/UX
+          <Link href="/blog/podcast-app">
+            <div className={styles.card}>
+              <Image
+                fill={true}
+                src={illustrationApp}
+                alt="Podcast App illustration"
+                placeholder="blur"
+              />
+              <div className={styles.cardContent}>
+                <div className={styles.cardTagList}>
+                  <div
+                    className={styles.cardTagItem}
+                    style={{ background: "#604535" }}
+                  >
+                    UI/UX
+                  </div>
+                  <div
+                    className={styles.cardTagItem}
+                    style={{ background: "#604535" }}
+                  >
+                    React
+                  </div>
                 </div>
-                <div
-                  className={styles.cardTagItem}
-                  style={{ background: "#604535" }}
-                >
-                  React
+                <div className={styles.cardTitle} style={{ color: "#4E3527" }}>
+                  Podcast App
                 </div>
-              </div>
-              <div className={styles.cardTitle} style={{ color: "#4E3527" }}>
-                Podcast App
               </div>
             </div>
-          </div>
-          <div className={styles.card}>
-            <Image
-              fill={true}
-              src={illustrationLaptop}
-              alt="Design exploration illustration"
-              placeholder="blur"
-            />
-            <div className={styles.cardContent}>
-              <div className={styles.cardTagList}></div>
-              <div className={styles.cardTitle} style={{ color: "#6E2C1C" }}>
-                Design Exploration
+          </Link>
+          <Link href="/blog/design-exploration">
+            <div className={styles.card}>
+              <Image
+                fill={true}
+                src={illustrationLaptop}
+                alt="Design exploration illustration"
+                placeholder="blur"
+              />
+              <div className={styles.cardContent}>
+                <div className={styles.cardTagList}></div>
+                <div
+                  className={styles.cardTitle}
+                  style={{ color: "rgb(87 68 63)" }}
+                >
+                  Design Exploration
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </main>

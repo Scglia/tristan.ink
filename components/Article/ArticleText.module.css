@@ -4,8 +4,13 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
 }
 
 .text b {
   font-weight: 600;
+  margin-left: -20px;
+  padding-bottom: 4px;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
 }

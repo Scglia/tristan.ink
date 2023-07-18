@@ -6,7 +6,7 @@ export interface ArticleHeaderProps {
   imageAlt: string;
   color: string;
   title: string;
-  tags: string[];
+  tags?: string[];
 }
 
 export default function ArticleHeader({
@@ -19,7 +19,7 @@ export default function ArticleHeader({
   return (
     <div style={{ color: color }}>
       <div className={styles.tagList}>
-        {tags.map((tag, i) => (
+        {tags?.map((tag, i) => (
           <div key={i} className={styles.tagItem} style={{ background: color }}>
             {tag}
           </div>

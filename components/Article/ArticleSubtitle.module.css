@@ -1,5 +1,6 @@
 .subtitle {
-  padding-top: 16px;
+  padding-top: 32px;
+  padding-bottom: 4px;
   font-size: 1.5rem;
   font-weight: 600;
 }

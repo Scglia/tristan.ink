@@ -23,15 +23,15 @@ export default function TomTomCaseStudy() {
           />
           <ArticleText>
             <ArticleIntro>
-              At TomTom, I was part of a team that was responsible for improving
-              the user experience of the website. We used A/B testing to
-              validate our ideas and measure the impact of our changes.
+              At TomTom, I was part of a team responsible for improving the user
+              experience of the website. We used A/B testing to validate our
+              ideas and measure the impact of our changes.
             </ArticleIntro>
             <p>
-              But before making any changes, we have to find out what needs
+              Before making any changes, we have to find out what needs
               improvement.
             </p>
-            <ArticleSubtitle>The problem</ArticleSubtitle>
+            <ArticleSubtitle>Problems</ArticleSubtitle>
             <p>
               Based on a poll on our website, it was discovered that a
               significant number of users were having difficulty updating their
@@ -54,7 +54,7 @@ export default function TomTomCaseStudy() {
               update&quot; support page. This inconsistency made it challenging
               for users to find the update option they needed.
             </p>
-            <ArticleSubtitle>The solutions</ArticleSubtitle>
+            <ArticleSubtitle>Solutions</ArticleSubtitle>
             <p>
               To address the problem, the following solutions were proposed:
             </p>

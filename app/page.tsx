@@ -2,10 +2,10 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { clsx } from "clsx";
 import Header from "@/components/Header";
-import illustrationApp from "@/public/illustration_app.png";
 import illustrationLaptop from "@/public/illustration-laptop-crop.png";
 import illustrationResume from "@/public/illustration-resume-crop.png";
 import illustrationGps from "@/public/illustration-gps-crop.png";
+import iphoneFrame from "@/public/iphone-frame.svg";
 import Link from "next/link";
 
 export default function Home() {
@@ -24,7 +24,10 @@ export default function Home() {
             href="/Tristan Scaglia - Designer and developer.pdf"
             target="_blank"
           >
-            <div className={styles.card}>
+            <div
+              style={{ "--animation-order": "1" } as any}
+              className={styles.card}
+            >
               <Image
                 fill={true}
                 src={illustrationResume}
@@ -40,7 +43,10 @@ export default function Home() {
             </div>
           </a>
           <Link href="/blog/tomtom-case-study">
-            <div className={styles.card}>
+            <div
+              className={styles.card}
+              style={{ "--animation-order": "2" } as any}
+            >
               <Image
                 fill={true}
                 src={illustrationGps}
@@ -63,13 +69,57 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/blog/podcast-app">
-            <div className={styles.card}>
-              <Image
-                fill={true}
-                src={illustrationApp}
-                alt="Podcast App illustration"
-                placeholder="blur"
-              />
+            <div
+              className={styles.card}
+              style={{ "--animation-order": "3" } as any}
+            >
+              <div
+                style={{
+                  background:
+                    "linear-gradient(rgba(245, 222, 210, 1), rgba(225, 189, 168, 1))",
+                }}
+                className={styles.animatedBackground}
+              >
+                <div style={{ height: "64%", position: "relative" }}>
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "3%",
+                      bottom: "3%",
+                      left: 0,
+                      right: 0,
+                      boxShadow:
+                        "-21.378297805786133px 7.400180339813232px 15.622602462768555px -4.11121129989624px #AA8570, -44.401084899902344px 9.866907119750977px 36.17865753173828px -7.400180339813232px #CBA38B, -23.022783279418945px 3.288969039916992px 14.800360679626465px -7.400180339813232px rgba(123, 87, 66, 0.50), -100px 4px 114px 0px rgba(188, 145, 120, 0.70)",
+                      borderRadius: "1.28475rem",
+                    }}
+                  ></div>
+                  <Image
+                    src={iphoneFrame}
+                    alt="iPhone frame"
+                    fill={true}
+                    style={{ zIndex: 0 }}
+                  />
+                  <video
+                    style={{
+                      height: "100%",
+                      width: "100%",
+                      zIndex: 1,
+                      position: "relative",
+                      padding: "20% 0% 9% 0%",
+                      borderRadius: "4px 4px 26px 26px",
+                    }}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  >
+                    <source
+                      src="https://res.cloudinary.com/sentiers-croises/video/upload/v1690207036/posecast-android-small.mp4"
+                      type="video/mp4"
+                    ></source>
+                  </video>
+                </div>
+              </div>
               <div className={styles.cardContent}>
                 <div className={styles.cardTagList}>
                   <div
@@ -92,7 +142,10 @@ export default function Home() {
             </div>
           </Link>
           <Link href="/blog/design-exploration">
-            <div className={styles.card}>
+            <div
+              className={styles.card}
+              style={{ "--animation-order": "4" } as any}
+            >
               <Image
                 fill={true}
                 src={illustrationLaptop}

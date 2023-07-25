@@ -31,6 +31,18 @@
   }
 }
 
+.card:hover .cardBackground {
+  transform: scale(1.07) translateY(1%) matrix(1, 0, 0, 1, 0, 0);
+  transition-duration: 1s;
+  /* filter: saturate(0); */
+}
+
+.cardBackground {
+  transition-property: transform, filter;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, .86, .31, 1.21);
+}
+
 .cardContent {
   height: 100%;
   position: relative;

@@ -29,6 +29,7 @@ export default function Home() {
               className={styles.card}
             >
               <Image
+                className={styles.cardBackground}
                 fill={true}
                 src={illustrationResume}
                 alt="Resume illustration"
@@ -48,6 +49,7 @@ export default function Home() {
               style={{ "--animation-order": "2" } as any}
             >
               <Image
+                className={styles.cardBackground}
                 fill={true}
                 src={illustrationGps}
                 alt="Experimentation at TomTom illustration"
@@ -78,7 +80,10 @@ export default function Home() {
                   background:
                     "linear-gradient(rgba(245, 222, 210, 1), rgba(225, 189, 168, 1))",
                 }}
-                className={styles.animatedBackground}
+                className={clsx(
+                  styles.animatedBackground,
+                  styles.cardBackground
+                )}
               >
                 <div style={{ height: "64%", position: "relative" }}>
                   <div
@@ -144,6 +149,7 @@ export default function Home() {
               style={{ "--animation-order": "4" } as any}
             >
               <Image
+                className={styles.cardBackground}
                 fill={true}
                 src={illustrationLaptop}
                 alt="Design exploration illustration"

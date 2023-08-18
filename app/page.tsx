@@ -92,7 +92,7 @@ export default function Home() {
                       inset: "3% 2px",
                       boxShadow:
                         "-21.378297805786133px 7.400180339813232px 15.622602462768555px -4.11121129989624px #AA8570, -44.401084899902344px 9.866907119750977px 36.17865753173828px -7.400180339813232px #CBA38B, -23.022783279418945px 3.288969039916992px 14.800360679626465px -7.400180339813232px rgba(123, 87, 66, 0.50), -100px 4px 114px 0px rgba(188, 145, 120, 0.70)",
-                      borderRadius: "1.28475rem",
+                      borderRadius: "max(1.28475rem, 1.6vw)",
                     }}
                   ></div>
                   <Image
@@ -108,7 +108,7 @@ export default function Home() {
                       zIndex: 1,
                       position: "relative",
                       padding: "20% 0% 9% 0%",
-                      borderRadius: "4px 4px 26px 26px",
+                      borderRadius: "4px 4px max(26px, 2vw) max(26px, 2vw)",
                     }}
                     autoPlay
                     loop

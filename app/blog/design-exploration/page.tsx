@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Article from "@/components/Article/Article";
 import ArticleHeader from "@/components/Article/ArticleHeader";
-import ArticleIntro from "@/components/Article/ArticleIntro";
 import ArticleText from "@/components/Article/ArticleText";
 import ArticleSubtitle from "@/components/Article/ArticleSubtitle";
 import Header from "@/components/Header";
@@ -24,9 +23,6 @@ export default function DesignExploration() {
             title="Design Exploration"
           />
           <ArticleText>
-            <ArticleIntro>
-              Some exploration, some experimentation, some fun.
-            </ArticleIntro>
             <ArticleSubtitle>Happy Homeowners</ArticleSubtitle>
             <p>Happy Homeowners is a french blog I&apos;ve redesigned.</p>
             <p>

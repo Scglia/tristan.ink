@@ -17,11 +17,11 @@ export default function Home() {
       <div className="center">
         <div className={styles.grid}>
           <div className={clsx(styles.card, styles.description)}>
-            <div>I&apos;m a designer and developer</div>
+            <div>I&apos;m a developer and designer</div>
             <div>based in the Netherlands</div>
           </div>
           <a
-            href="/Tristan Scaglia - Designer and developer.pdf"
+            href="/Tristan Scaglia - Developer and designer.pdf"
             target="_blank"
           >
             <div

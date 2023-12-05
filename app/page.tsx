@@ -37,7 +37,7 @@ export default function Home() {
               />
               <div className={styles.cardContent}>
                 <div className={styles.cardTagList}></div>
-                <div className={styles.cardTitle} style={{ color: "#274E81" }}>
+                <div className={styles.cardTitle} style={{ color: "#315b92" }}>
                   Resume
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function Home() {
                     UX Case Study
                   </div>
                 </div>
-                <div className={styles.cardTitle} style={{ color: "#165252" }}>
+                <div className={styles.cardTitle} style={{ color: "#246b6b" }}>
                   Experimentation at TomTom
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function Home() {
                     React
                   </div>
                 </div>
-                <div className={styles.cardTitle} style={{ color: "#4E3527" }}>
+                <div className={styles.cardTitle} style={{ color: "#73503d" }}>
                   Podcast App
                 </div>
               </div>
@@ -157,10 +157,7 @@ export default function Home() {
               />
               <div className={styles.cardContent}>
                 <div className={styles.cardTagList}></div>
-                <div
-                  className={styles.cardTitle}
-                  style={{ color: "rgb(87 68 63)" }}
-                >
+                <div className={styles.cardTitle} style={{ color: "#735b55" }}>
                   Design Exploration
                 </div>
               </div>

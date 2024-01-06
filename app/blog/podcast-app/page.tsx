@@ -47,14 +47,14 @@ export default function PodcastApp() {
             >
               <iframe
                 style={{ border: "none", borderRadius: 24 }}
-                src="https://posecast-git-framer-motion-scglia.vercel.app/"
+                src="https://posecast.vercel.app/"
                 width="100%"
                 height="100%"
               />
               <a
                 style={{ padding: 4, marginTop: 4 }}
                 className="link"
-                href="https://posecast-git-framer-motion-scglia.vercel.app/"
+                href="https://posecast.vercel.app/"
                 target="_blank"
               >
                 Open in a new window

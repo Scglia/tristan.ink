@@ -85,7 +85,13 @@ export default function Home() {
                   styles.cardBackground
                 )}
               >
-                <div style={{ height: "64%", position: "relative" }}>
+                <div
+                  style={{
+                    height: "64%",
+                    position: "relative",
+                    aspectRatio: "12/25",
+                  }}
+                >
                   <div
                     style={{
                       position: "absolute",

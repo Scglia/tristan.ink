@@ -1,0 +1,12 @@
+.howTo {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .howTo {
+    flex-direction: column;
+  }
+}

@@ -9,7 +9,7 @@ export default function Header() {
       </Link>
       <menu className={styles.menu}>
         <li className={styles.menuItem}>
-          <a href="mailto:tristan.scaglia@gmail.com">contact</a>
+          <a href="mailto:hi@tristan.ink">contact</a>
         </li>
         <span className={styles.menuItem}>·</span>
         <li className={styles.menuItem}>
